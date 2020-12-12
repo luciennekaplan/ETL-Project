@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Import the raw CSV
-path = os.path.join(os.path.dirname(__file__),"meteorite-landings.csv")
+path = os.path.join(os.path.dirname(__file__),"Resources","meteorite-landings.csv")
 data = pd.read_csv(path)
 
 # Filter out the invalid locations
