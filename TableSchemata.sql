@@ -14,7 +14,7 @@ CREATE TABLE UFO_Sitings (
 
 CREATE TABLE Meteorite_Landings (
 	NAME VARCHAR,
-	ID FLOAT,
+	ID FLOAT PRIMARY KEY,
 	NameType VARCHAR,
 	Class VARCHAR,
 	Mass FLOAT,
