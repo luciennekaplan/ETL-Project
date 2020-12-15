@@ -38,6 +38,8 @@ for index, row in year_UFOs_in_US.iterrows():
 
 year_UFOs_in_US["zipcode"] = ziplist
 
+year_UFOs_in_US = year_UFOs_in_US.loc[year_UFOs_in_US["zipcode"] != "Drop", :]
+
 final_UFO = year_UFOs_in_US[(year_UFOs_in_US['Year']>='1906') | (year_UFOs_in_US['Year'] <= '2013')]
 
 final_UFO.to_csv(r'Resources\final_UFO.csv')
